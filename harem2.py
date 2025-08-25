@@ -17,25 +17,11 @@ options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 
-# Docker veya sistemde Chrome yolu varsa belirt (opsiyonel ama sağlamlık için)
-# for candidate in ("/usr/bin/google-chrome", "/usr/bin/chromium", "/opt/google/chrome/google-chrome"):
-#     if os.path.exists(candidate):
-#         options.binary_location = candidate
-#         break
 
 def get_altin_fiyatlari():
     """Harem Altın web sitesinden fiyatları çeker ve JSON olarak kaydeder."""
 
-    # --- Chromedriver bul/indir: Docker'da sistem sürücüsünü, aksi halde webdriver-manager ---
-    # driver_path = shutil.which("chromedriver") or "/usr/bin/chromedriver"
-    # if os.path.exists(driver_path):
-    #     service = Service(driver_path)
-    # else:
-    #     service = Service(ChromeDriverManager().install())
-
-    service = Service(executable_path="/usr/local/bin/chromedriver") # Ya da Dockerfile'da nereye kurduysanız o yol
-
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(options=options)
 
     try:
         ts = datetime.now(ZoneInfo("Europe/Istanbul")).isoformat(timespec="seconds")
