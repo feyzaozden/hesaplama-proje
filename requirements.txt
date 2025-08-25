@@ -1,0 +1,7 @@
+selenium>=4.21,<5
+webdriver-manager>=4.0.2
+tzdata>=2024.1
+numpy
+pandas
+matplotlib
+apscheduler

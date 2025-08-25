@@ -1,0 +1,46 @@
+{
+    "kaynak": "haremaltin.com",
+    "kayitZamani": "2025-08-22T17:32:39+03:00",
+    "hasAltin": {
+        "isim": "HAS ALTIN",
+        "alis": "4.456,54",
+        "satis": "4.478,73",
+        "fark": "%1.71"
+    },
+    "ons": {
+        "isim": "ONS",
+        "alis": "3.372,8",
+        "satis": "3.373,2",
+        "fark": "%1.05"
+    },
+    "usdKg": {
+        "isim": "USD",
+        "alis": "108.160",
+        "satis": "108.480",
+        "fark": "%1.33"
+    },
+    "eurKg": {
+        "isim": "EUR",
+        "alis": "92.550",
+        "satis": "93.040",
+        "fark": "%0.78"
+    },
+    "yirmiIkiAyar": {
+        "isim": "22 AYAR",
+        "alis": "4.053,45",
+        "satis": "4.269,79",
+        "fark": "%6.60"
+    },
+    "gramAltin": {
+        "isim": "GRAM ALTIN",
+        "alis": "4.434,26",
+        "satis": "4.492,17",
+        "fark": "%2.52"
+    },
+    "onDortAyar": {
+        "isim": "14 AYAR",
+        "alis": "2.435,66",
+        "satis": "3.411,17",
+        "fark": "%41.78"
+    }
+}
